@@ -1,0 +1,108 @@
+<! doctype html >
+<html>
+
+
+<head>
+<title> Bathlicious </title>
+<link rel="icon" href="logowebsite.png"/>
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<header>
+<div id="home"> Wie zijn we? </div>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="producten.html">Producten</a>
+  <a href="wiezijnwe.html">Wie zijn we?</a>
+  <a href="nieuws.html">Nieuws</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<table id= "wie">
+<tr> 
+<td id = "kolom4">Wij zijn 3 vriendinnen: Emmy, Julie en Zoë en voor school hebben wij een studentenbedrijf opgericht namelijk Bathlicious. 
+</br> Wij maken dit studentenbedrijf voor onze GIP (geïntegreerde proef).</br> 
+</br> Wij verkopen badproducten, de producten die we verkopen kan u <a href="producten.html"> hier </a> vinden.</br> 
+</br>Door het jaar houden we twee verkoopmomenten, het eerste volgende verkoopmomenten kan u  <a href="index.html"> hier </a> vinden.</br>
+</br>Wij zijn met volle overtuiging gestart aan dit project, dit zal je ongetwijfeld wel merken! </br> </br>Hopelijk tot dan!
+</td>
+<td id = "Kolom3"> <div class="container"> <img id="foto3" src="wij.jpg" alt="Foto in bewerking"/> <div class= "copy_bottom">&copy 2018 Batchlicious </div></div></td>
+</tr>
+
+
+<footer>
+<table id="footer">
+<tr> 
+<th id="titelfooter"> Menu </th>
+<th id="titelfooter"> Contact </th>
+</tr>
+
+<tr>
+<td> <a id="link" href ="index.html"/> Home </a> </td>
+<td> <a id="link" href ="https://www.facebook.com/Bathlicious-540694249689076/" target= "_blank"/> Facebook </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "producten.html"/> Producten </a> </td>
+<td> <a id="link" href ="https://www.instagram.com/_bathlicious_/?hl=nl" target= "_blank"/> Instagram </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "wiezijnwe.html"/> Wie zijn we? </a> </td>
+<td >  <a id="link" href="mailto:info@bathlicious@gmail.com?S_top"> info.bathlicious@gmail.com </a></td>
+</tr>
+
+<tr>
+<td> <a id="link" href="nieuws.html"/> Nieuws </a> </td>
+</tr>
+
+<tr>
+<td> <a id= "link" href="contact.html" /> Contact </a> </td>
+</tr>
+
+</table>
+<div id="copyright"> &copy 2018 Batchlicious all rights reserved </div>
+</footer>
+
+</body>
+</html>
