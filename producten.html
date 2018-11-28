@@ -1,0 +1,210 @@
+<! doctype html >
+<html>
+
+
+<head>
+<title> Bathlicious </title>
+<link rel="icon" href="logowebsite.png"/>
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<header>
+<div id="home"> Producten </div>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="producten.html">Producten</a>
+  <a href="wiezijnwe.html">Wie zijn we?</a>
+  <a href="nieuws.html">Nieuws</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+<table>
+<h1> Ons assortiment </h1>
+	<tr>
+		<td>
+			<div class="container">
+				<img src="eendje.jpg" alt="eendje" class="eendje"/>
+				<div class="overlay">
+				<div class="text">Eendje </br></br> €2,00 </div>
+				</div>
+			</div>			
+		</td>
+			
+		<td>
+				<div class="container">
+				<img src="hartje.jpg" alt="hartje" class="hartje"/>
+				<div class="overlay">
+				<div class="text">Roze Hartje </br></br> €2,00 </div>
+				</div>
+				</div>	
+				</td>			
+	</tr>
+	<tr>
+		<td> <h3> Eendje </h3> </td>
+		<td> <h3> Hartje </h3> </td>
+	</tr>
+	<tr>
+		<td>
+			<div class="container">
+				<img src="kikker.jpg" alt="eendje" class="eendje"/>
+				<div class="overlay">
+				<div class="text">Kikker </br></br> €2,00 </div>
+				</div>
+			</div>			
+		</td>
+			
+		<td>
+				<div class="container">
+				<img src="rood_hartje.jpg" alt="hartje" class="hartje"/>
+				<div class="overlay">
+				<div class="text">Rood Hartje </br></br> €2,00 </div>
+				</div>
+				</div>	
+				</td>			
+	</tr>
+	<tr>
+		<td> <h3> Kikker </h3> </td>
+		<td> <h3> Hartje </h3> </td>
+	</tr>
+    <tr>
+		<td>
+			<div class="container">
+			<img src="badparels.jpg" alt="badparels" class="badparels"/>
+			<div class="overlay">
+			<div class="text">Badparels 6 stuks </br></br> €3,20 </div>
+			</div>
+			</div>					
+		</td>
+		<td> 
+		<div class="container">
+		<img src="badzout.jpg" alt="zout" class="zout" />
+		<div class="overlay">
+			<div class="text">Badzout 275g </br></br> €7,50 </div>
+			</div>
+			</div>	
+		</td>
+	</tr>
+	<tr>
+		<td> <h3> Badparels </h3> </td>
+		<td> <h3> Badzout </h3></td>
+	</tr>	
+	
+</table>
+<h1> Onze cadeauverpakkingen </h1>
+<table>
+	<tr>
+		<td>
+		<div class="container">
+		<img src="pakketklein.jpg" alt="Klein_pakket" class="klein_pakket"/> 
+		<div class="overlay">
+			<div class="text">Klein Pakket </br> - Handdoek </br> - 2 Zeepjes </br></br> €7,50 </div>
+			</div>
+			</div>	
+		</td>
+		<td>
+<div class="container">		
+		<img src="pakketmidden.jpg" alt="Midden_pakket" class="midden_pakket"/> 
+		<div class="overlay">
+			<div class="text">Middel Pakket </br> - Badzout </br> - Zeepjes </br> - Badparels </br></br> €11,00 </div>
+			</div>
+			</div>
+		</td>		
+	</tr>
+	<tr>
+		<td> <h3> Klein Pakket </h3> </td>
+		<td> <h3> Middel Pakket </h3> </td>
+	</tr>	
+	<tr>
+		<td> 
+		<div class="container">
+		<img src="pakketgroot.jpg" alt="groot_pakker" class="groot_pakket"/>
+				<div class="overlay">
+			<div class="text">Groot Pakket </br> - Handdoek </br> - Badzout </br> - Zeepjes </br> - Badparels</br></br> €16,00 </div>
+			</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td> 
+		<h3> Groot Pakket </h3>
+		</td>
+	</tr>	
+</table>
+
+
+<footer>
+<table id="footer">
+<tr> 
+<th id="titelfooter"> Menu </th>
+<th id="titelfooter"> Contact </th>
+</tr>
+
+<tr>
+<td> <a id="link" href ="index.html"/> Home </a> </td>
+<td> <a id="link" href ="https://www.facebook.com/Bathlicious-540694249689076/" target= "_blank"/> Facebook </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "producten.html"/> Producten </a> </td>
+<td> <a id="link" href ="https://www.instagram.com/_bathlicious_/?hl=nl" target= "_blank"/> Instagram </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "wiezijnwe.html"/> Wie zijn we? </a> </td>
+<td> <a id="link" href="mailto:info@bathlicious@gmail.com?S_top"> info.bathlicious@gmail.com </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href="nieuws.html"/> Nieuws </a> </td>
+</tr>
+
+<tr>
+<td> <a id= "link" href="contact.html" /> Contact </a> </td>
+</tr>
+
+</table>
+<div id="copyright"> &copy 2018 Batchlicious all rights reserved </div>
+</footer>
+
+</body>
+</html>

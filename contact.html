@@ -1,0 +1,112 @@
+<!doctype html >
+<html>
+
+
+<head>
+<title> Bathlicious </title>
+<link rel="icon" href="logowebsite.png"/>
+<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+
+<header>
+<div id="home"> Contact </div>
+</header>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="index.html">Home </a>
+  <a href="producten.html">Producten</a>
+  <a href="wiezijnwe.html">Wie zijn we?</a>
+  <a href="nieuws.html">Nieuws</a>
+  <a href="contact.html">Contact</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<h1> Contactgegevens </h1>
+<table id="tblcontact">
+<tr> 
+<td id= "kop"> Adres: Peter Benoitlaan 40, 9800 Deinze </br> </br> Telefoon: +32 487 66 72 66 </br> </br> <a href ="https://www.facebook.com/Bathlicious-540694249689076/" target= "_blank"/> <img src="facebook.png" alt="facebook" class="facebook" />
+<a href ="https://www.instagram.com/_bathlicious_/?hl=nl" target= "_blank"/> <img src="instagram.png" alt="instagram" class="instagram"/>
+<a href="mailto:info@bathlicious@gmail.com?S_top"/> <img src="gmail.png" alt="mail" class="gmail"/> </td>
+<td> <div id "map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5023.03181636296!2d3.5223556193648635!3d50.98813797229683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x36d9e2abf26947f7!2sLeiepoort+campus+Sint-Vincentius!5e0!3m2!1snl!2sbe!4v1539705750660" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> </td>
+</tr>
+</table>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+ 
+
+<footer>
+<table id="footer">
+<tr> 
+<th id="titelfooter"> Menu </th>
+<th id="titelfooter"> Contact </th>
+</tr>
+
+<tr>
+<td> <a id="link" href ="index.html"/> Home </a> </td>
+<td> <a id="link" href ="https://www.facebook.com/Bathlicious-540694249689076/" target= "_blank"/> Facebook </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "producten.html"/> Producten </a> </td>
+<td> <a id="link" href ="https://www.instagram.com/_bathlicious_/?hl=nl" target= "_blank"/> Instagram </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href= "wiezijnwe.html"/> Wie zijn we? </a> </td>
+<td>  <a id="link" href="mailto:info@bathlicious@gmail.com?S_top"> info.bathlicious@gmail.com </a> </td>
+</tr>
+
+<tr>
+<td> <a id="link" href="nieuws.html"/> Nieuws </a> </td>
+</tr>
+
+<tr>
+<td> <a id= "link" href="contact.html" /> Contact </a> </td>
+</tr>
+
+</table>
+<div id="copyright"> &copy 2018 Batchlicious all rights reserved </div>
+</footer>
+
+</body>
+</html>
